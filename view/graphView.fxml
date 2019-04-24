@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #e8eaf6;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Separator layoutX="700.0" layoutY="175.0" maxHeight="-Infinity" maxWidth="-Infinity" orientation="VERTICAL" prefHeight="260.0" scaleY="1.7" style="-fx-background-color: #b6b8c3;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="294.0" AnchorPane.topAnchor="0.0" />
+      <LineChart fx:id="theLineGraph" layoutX="14.0" layoutY="75.0" maxHeight="472.0" maxWidth="654.0" prefHeight="472.0" prefWidth="654.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="310.0" AnchorPane.topAnchor="65.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Text fill="#616268" layoutX="40.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last 31 Days" AnchorPane.bottomAnchor="533.9765625" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="828.38671875" AnchorPane.topAnchor="34.0234375">
+         <font>
+            <Font name="System Italic" size="24.0" />
+         </font>
+      </Text>
+      <VBox alignment="CENTER" layoutX="719.0" prefHeight="598.0" prefWidth="272.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="caloriesButton" mnemonicParsing="false" onAction="#setGraph" prefHeight="70.0" prefWidth="220.0" style="-fx-background-color: #b6b8c3;" text="Calories" textFill="#494a4d">
+               <font>
+                  <Font name="System Bold Italic" size="26.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="protienButton" mnemonicParsing="false" onAction="#setGraph" prefHeight="70.0" prefWidth="220.0" style="-fx-background-color: #b6b8c3;" text="Protein" textFill="#494a4d">
+               <font>
+                  <Font name="System Bold Italic" size="26.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="carbsButton" mnemonicParsing="false" onAction="#setGraph" prefHeight="70.0" prefWidth="220.0" style="-fx-background-color: #b6b8c3;" text="Carbohydrates" textFill="#494a4d">
+               <font>
+                  <Font name="System Bold Italic" size="26.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="fatsButton" mnemonicParsing="false" onAction="#setGraph" prefHeight="70.0" prefWidth="220.0" style="-fx-background-color: #b6b8c3;" text="Fats" textFill="#494a4d">
+               <font>
+                  <Font name="System Bold Italic" size="26.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="bevButton" mnemonicParsing="false" onAction="#setGraph" prefHeight="70.0" prefWidth="220.0" style="-fx-background-color: #b6b8c3;" text="Bevarages" textFill="#494a4d">
+               <font>
+                  <Font name="System Bold Italic" size="26.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <Button fx:id="backButton" mnemonicParsing="false" onAction="#buttonHandler" text="Back" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="30.0">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
